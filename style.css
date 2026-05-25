@@ -1,0 +1,167 @@
+/* Design System & Variables */
+:root {
+    --bg-primary: #F4F6F0; /* Soft botanical cream/sage */
+    --text-primary: #1C3322; /* Deep forest green */
+    --text-secondary: #4A6351; /* Muted moss green */
+    --accent: #A67C37; /* Earthy gold/bronze */
+    --accent-hover: #8A6428;
+    --card-bg: rgba(255, 255, 255, 0.82);
+    --card-border: rgba(74, 99, 81, 0.15);
+    --shadow: 0 20px 40px rgba(28, 51, 34, 0.06);
+}
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Premium Background Glow Effect */
+.background-glow {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(214, 228, 218, 0.9) 0%, rgba(244, 246, 240, 1) 75%);
+    z-index: -1;
+}
+
+/* Elegant Glassmorphic Card Container */
+.card-container {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--card-border);
+    padding: 3.5rem 2.5rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 480px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInCard 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Typography & Layout */
+.header {
+    margin-bottom: 2.5rem;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+}
+
+.names {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.75rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.details {
+    margin-bottom: 3rem;
+}
+
+.date {
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.venue {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+/* Buttons and Interactivity */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+    padding: 0.75rem 2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.hidden-info {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hidden-info.show {
+    max-height: 100px;
+    opacity: 1;
+}
+
+/* Animations */
+@keyframes fadeInCard {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
