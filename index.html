@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alanna &amp; Caleb — June 6, 2027</title>
+  <meta name="description" content="Join us as we celebrate our wedding on Sunday, June 6, 2027 at the Brooklyn Botanic Garden." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,500;1,700&family=Host+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="gate-overlay" id="site-gate">
+    <form class="gate-box" id="gate-form">
+      <img class="gate-box__logo" src="assets/vectors/monogram-footer.svg" alt="Alanna &amp; Caleb" />
+      <p>Enter the password to view Alanna &amp; Caleb's wedding site.</p>
+      <input type="password" id="gate-password" placeholder="Password" autocomplete="off" required />
+      <button class="btn-pill" type="submit">Enter</button>
+      <p class="gate-box__error" id="gate-error" hidden>Incorrect password, please try again.</p>
+    </form>
+  </div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/vectors/monogram-nav.svg" alt="Alanna &amp; Caleb" />
+    </a>
+    <div class="nav-links">
+      <a href="details.html">Details</a>
+      <a href="travel.html">Travel</a>
+      <a href="faq.html">FAQ</a>
+      <a href="rsvp.html">RSVP</a>
+    </div>
+    <button class="nav-menu-toggle" type="button" aria-label="Toggle menu" aria-controls="mobile-nav">MENU</button>
+  </nav>
+
+  <div class="mobile-nav-panel" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="details.html">Details</a>
+    <a href="travel.html">Travel</a>
+    <a href="faq.html">FAQ</a>
+    <a href="rsvp.html">RSVP</a>
+  </div>
+
+  <header class="home-header">
+    <img
+      class="home-header__logo"
+      src="assets/vectors/hero-logo.svg"
+      alt="Alanna &amp; Caleb"
+      data-parallax-speed="0.12"
+    />
+    <p class="home-header__meta home-header__meta--date">SUNDAY, JUNE 6, 2027</p>
+    <p class="home-header__meta home-header__meta--venue">BROOKLYN BOTANIC GARDEN</p>
+  </header>
+
+  <main>
+    <div class="home-photos">
+      <img src="assets/images/hero-photo-1.jpg" alt="Alanna and Caleb walking together" loading="lazy" />
+      <img src="assets/images/hero-photo-2.jpg" alt="Alanna and Caleb smiling with flowers" loading="lazy" />
+    </div>
+
+    <section class="map-scene reveal" aria-label="Getting to the venue">
+      <div class="map-scene__layer map-scene__leaves" data-parallax-speed="0.1" aria-hidden="true">
+        <svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#c5d278">
+            <path d="M40 420 C 20 380 40 320 90 310 C 80 270 120 230 170 245 C 190 200 260 200 280 245 C 330 235 360 280 340 320 C 380 330 380 390 340 400 Z" />
+            <path d="M620 460 C 600 420 630 370 680 370 C 675 330 725 300 765 320 C 800 290 850 320 840 365 C 880 375 880 425 840 435 Z" />
+          </g>
+          <g fill="#ff5656" opacity="0.55">
+            <circle cx="120" cy="300" r="7" />
+            <circle cx="700" cy="360" r="7" />
+            <circle cx="250" cy="230" r="5" />
+            <circle cx="790" cy="310" r="5" />
+          </g>
+        </svg>
+      </div>
+      <div class="map-scene__layer map-scene__path" data-parallax-speed="0.24" aria-hidden="true">
+        <svg class="map-scene__svg" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M100 380 C 240 300 300 420 420 340 C 540 260 560 380 680 300 C 760 250 780 200 800 150"
+            fill="none"
+            stroke="#37480a"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-dasharray="1 16"
+          />
+          <g transform="translate(100 380)">
+            <circle r="26" fill="#37480a" />
+            <path d="M-10 4 L0 -8 L10 4 L10 10 L-10 10 Z" fill="#fff7da" />
+          </g>
+          <text x="100" y="425" text-anchor="middle" fill="#37480a" font-size="14" letter-spacing="1.5" font-weight="700">YOU ARE HERE</text>
+
+          <g transform="translate(800 150)">
+            <path d="M0 -32 C 18 -32 30 -18 30 -2 C 30 20 0 42 0 42 C 0 42 -30 20 -30 -2 C -30 -18 -18 -32 0 -32 Z" fill="#ff5656" />
+            <circle cx="0" cy="-4" r="10" fill="#fff7da" />
+          </g>
+          <text x="800" y="70" text-anchor="middle" fill="#37480a" font-size="14" letter-spacing="1.2" font-weight="700">BROOKLYN</text>
+          <text x="800" y="88" text-anchor="middle" fill="#37480a" font-size="14" letter-spacing="1.2" font-weight="700">BOTANIC GARDEN</text>
+        </svg>
+      </div>
+    </section>
+
+    <section class="nav-tiles reveal">
+      <div class="nav-tiles__bg" data-parallax-speed="0.14" aria-hidden="true">
+        <img src="assets/images/nav-tiles-bg.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="nav-tiles__grid">
+        <a class="nav-tile" href="details.html">Details</a>
+        <a class="nav-tile" href="travel.html">Travel</a>
+        <a class="nav-tile" href="faq.html">FAQ</a>
+        <a class="nav-tile" href="rsvp.html">RSVP</a>
+      </div>
+    </section>
+
+    <section class="gallery reveal">
+      <div class="gallery__grid">
+        <div class="gallery__col">
+          <img src="assets/images/gallery-1.jpg" alt="Engagement photo 1" loading="lazy" />
+          <img src="assets/images/gallery-2.jpg" alt="Engagement photo 2" loading="lazy" />
+        </div>
+        <div class="gallery__col">
+          <img src="assets/images/nav-tiles-bg.jpg" alt="Brooklyn street" loading="lazy" />
+        </div>
+        <div class="gallery__col">
+          <img src="assets/images/gallery-3.jpg" alt="Engagement photo 3" loading="lazy" />
+          <img src="assets/images/gallery-4.jpg" alt="Engagement photo 4" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp-band reveal">
+      <div class="rsvp-band__bg" data-parallax-speed="0.1">
+        <img src="assets/images/rsvp-bg.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="rsvp-band__overlay"></div>
+      <div class="rsvp-band__content">
+        <h2>RSVP</h2>
+        <p>We can’t wait to celebrate with you! Please RSVP by February XX, 2027.</p>
+        <a class="btn-pill" href="rsvp.html">RSVP</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>JUNE 6, 2027</span>
+    <img src="assets/vectors/monogram-footer.svg" alt="" />
+    <span>BROOKLYN, NY</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

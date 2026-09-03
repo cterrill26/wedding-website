@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel — Alanna &amp; Caleb</title>
+  <meta name="description" content="Welcome to the Big Apple! Everything you need to know about getting to Brooklyn." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,500;1,700&family=Host+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="gate-overlay" id="site-gate">
+    <form class="gate-box" id="gate-form">
+      <img class="gate-box__logo" src="assets/vectors/monogram-footer.svg" alt="Alanna &amp; Caleb" />
+      <p>Enter the password to view Alanna &amp; Caleb's wedding site.</p>
+      <input type="password" id="gate-password" placeholder="Password" autocomplete="off" required />
+      <button class="btn-pill" type="submit">Enter</button>
+      <p class="gate-box__error" id="gate-error" hidden>Incorrect password, please try again.</p>
+    </form>
+  </div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/vectors/monogram-nav.svg" alt="Alanna &amp; Caleb" />
+    </a>
+    <div class="nav-links">
+      <a href="details.html">Details</a>
+      <a href="travel.html" class="is-active">Travel</a>
+      <a href="faq.html">FAQ</a>
+      <a href="rsvp.html">RSVP</a>
+    </div>
+    <button class="nav-menu-toggle" type="button" aria-label="Toggle menu" aria-controls="mobile-nav">MENU</button>
+  </nav>
+
+  <div class="mobile-nav-panel" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="details.html">Details</a>
+    <a href="travel.html" class="is-active">Travel</a>
+    <a href="faq.html">FAQ</a>
+    <a href="rsvp.html">RSVP</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Travel</h1>
+      <p>Welcome to the Big Apple!</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="info-block info-block--accommodations">
+      <div class="reveal">
+        <h3>Accommodations</h3>
+        <p>There are lots of housing options in the NYC area. We recommend looking for hotels or Airbnbs in Manhattan, Brooklyn, or Jersey City.</p>
+        <p style="margin-top: 16px">Here are some considerations that can help you decide where to stay:</p>
+        <ul>
+          <li>How long is my stay? Do I want to explore multiple neighborhoods in the NYC area while I’m there?</li>
+          <li>How close is the hotel to the nearest public transportation?</li>
+          <li>How close is the hotel to the airport I’m flying into?</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <iframe
+          class="info-block__map"
+          src="https://www.google.com/maps?q=Hampton+Inn+Brooklyn+Downtown&output=embed"
+          loading="lazy"
+          title="Map to the Hampton Inn Downtown/Brooklyn"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="hotel-block-note">
+          <p><strong>HOTEL BLOCK</strong></p>
+          <p style="margin-top: 12px">We have a 25 room hotel block at the <a href="https://www.hilton.com/en/hotels/nycbohx-hampton-brooklyn-downtown/" target="_blank" rel="noopener">Hampton Inn Downtown/Brooklyn</a>! This hotel is just a 20 minute drive or subway ride to the venue, and it’s in a convenient location to transit into Manhattan.</p>
+          <p style="margin-top: 12px">The hotel block is for <strong>June 5 to June 7</strong>. Guests who want to arrive earlier or stay longer should contact the hotel directly at (718) 875-8800 to check availability.</p>
+          <p style="margin-top: 12px">The deadline to book a room within our block is <strong>May 6, 2027</strong> at 5PM EST. You can use our group code “90D” or our <a href="https://www.hilton.com/en/attend-my-event/nycbohx-90d-3ca7d079-7076-4d48-a6b5-4d17a7455ca7/" target="_blank" rel="noopener">custom booking link</a>.</p>
+          <p style="margin-top: 12px">Our shuttle bus will transport guests to and from the venue at this location. Guests who are not staying at this hotel are welcome to ride in our shuttle bus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-block info-block--flights">
+      <div class="reveal">
+        <h3>Flights</h3>
+        <p>There are 3 airports in the NYC area: <a href="https://maps.app.goo.gl/d8Jxp1PEU9GL8A7o7" target="_blank" rel="noopener">John F Kennedy International Airport</a>, <a href="https://maps.app.goo.gl/BfZjc5KZ7B936f9g7" target="_blank" rel="noopener">LaGuardia Airport</a>, and <a href="https://maps.app.goo.gl/xsCkiLe95Wy8fzDY6" target="_blank" rel="noopener">Newark Liberty International Airport</a>.</p>
+        <p style="margin-top: 16px">We recommend flying into JFK because it has many flight options, has direct public transit connection into the city, and is closest to the venue.</p>
+      </div>
+      <div class="reveal">
+        <h3>Transportation</h3>
+        <p>NYC has a robust public transportation system that we encourage you to use! The subways and buses don’t require a special card for you to ride, you can simply use tap-to-pay.</p>
+        <p style="margin-top: 16px">We also don’t recommend you to rent a car—traffic can be very congested, and parking can be expensive and difficult to find. To drive around, you can call an Uber/Lyft or taxi.</p>
+      </div>
+    </section>
+
+    <section class="reccs">
+      <div class="reccs__heading reveal">
+        <h2>Need recommendations?</h2>
+        <p>Here are some of our favorite things in NYC!</p>
+      </div>
+      <div class="reccs__grid">
+        <div class="reccs__card reveal">
+          <div class="reccs__card-head">
+            <h3>Alanna’s List</h3>
+            <img src="assets/vectors/alanna-head.svg" alt="" />
+          </div>
+          <p><strong>Favorite slice:</strong> <a href="https://maps.app.goo.gl/D3FWUo6D5zLDd53M9" target="_blank" rel="noopener">L’Industrie Pizzeria</a> in West Village</p>
+          <p><strong>Favorite ice cream:</strong> <a href="https://maps.app.goo.gl/VpW5iZrCPJAP8qwY6" target="_blank" rel="noopener">Caffè Panna</a> in Gramercy Park</p>
+          <p><strong>Favorite bakery:</strong> <a href="https://maps.app.goo.gl/fGt7BJ6VXoxz3oiZ9" target="_blank" rel="noopener">Radio Bakery</a> in Greenpoint</p>
+          <p><strong>Favorite restaurant:</strong> <a href="https://maps.app.goo.gl/hqePcU92HZ7KRP9p8" target="_blank" rel="noopener">Bánh Anh Em</a> in East Village</p>
+        </div>
+        <div class="reccs__card reveal">
+          <div class="reccs__card-head">
+            <h3>Caleb’s List</h3>
+            <img src="assets/vectors/caleb-head.svg" alt="" />
+          </div>
+          <p><strong>Favorite slice:</strong> <a href="https://maps.app.goo.gl/DF4n8KVAd5LLqDhZ7" target="_blank" rel="noopener">Luigi’s Pizza</a> in South Slope</p>
+          <p><strong>Favorite ice cream:</strong> <a href="https://maps.app.goo.gl/u4Rs5wuA6eNtXrvS7" target="_blank" rel="noopener">Brooklyn Ice Cream Factory</a> in DUMBO</p>
+          <p><strong>Favorite bakery:</strong> <a href="https://maps.app.goo.gl/fq41fSZctK4cp9za7" target="_blank" rel="noopener">L’Appartement 4F</a> in Brooklyn Heights</p>
+          <p><strong>Favorite restaurant:</strong> <a href="https://maps.app.goo.gl/hd5y7xZ4JMDqtJKZA" target="_blank" rel="noopener">COQODAQ</a> in Flatiron</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp-band reveal">
+      <div class="rsvp-band__bg" data-parallax-speed="0.1">
+        <img src="assets/images/rsvp-bg.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="rsvp-band__overlay"></div>
+      <div class="rsvp-band__content">
+        <h2>RSVP</h2>
+        <p>We can’t wait to celebrate with you! Please RSVP by February XX, 2027.</p>
+        <a class="btn-pill" href="rsvp.html">RSVP</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>JUNE 6, 2027</span>
+    <img src="assets/vectors/monogram-footer.svg" alt="" />
+    <span>BROOKLYN, NY</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

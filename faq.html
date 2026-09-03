@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Alanna &amp; Caleb</title>
+  <meta name="description" content="Frequently asked questions about the wedding." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,500;1,700&family=Host+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="gate-overlay" id="site-gate">
+    <form class="gate-box" id="gate-form">
+      <img class="gate-box__logo" src="assets/vectors/monogram-footer.svg" alt="Alanna &amp; Caleb" />
+      <p>Enter the password to view Alanna &amp; Caleb's wedding site.</p>
+      <input type="password" id="gate-password" placeholder="Password" autocomplete="off" required />
+      <button class="btn-pill" type="submit">Enter</button>
+      <p class="gate-box__error" id="gate-error" hidden>Incorrect password, please try again.</p>
+    </form>
+  </div>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/vectors/monogram-nav.svg" alt="Alanna &amp; Caleb" />
+    </a>
+    <div class="nav-links">
+      <a href="details.html">Details</a>
+      <a href="travel.html">Travel</a>
+      <a href="faq.html" class="is-active">FAQ</a>
+      <a href="rsvp.html">RSVP</a>
+    </div>
+    <button class="nav-menu-toggle" type="button" aria-label="Toggle menu" aria-controls="mobile-nav">MENU</button>
+  </nav>
+
+  <div class="mobile-nav-panel" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="details.html">Details</a>
+    <a href="travel.html">Travel</a>
+    <a href="faq.html" class="is-active">FAQ</a>
+    <a href="rsvp.html">RSVP</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Frequently Asked Questions</h1>
+      <p>You asked, we answered.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="faq-section">
+      <div class="faq-illustration reveal" data-parallax-speed="0.08">
+        <img src="assets/vectors/couple-illustration.svg" alt="Illustration of Alanna and Caleb" />
+      </div>
+      <ul class="faq-list reveal">
+        <li class="faq-row">
+          <h5>Is the wedding indoors or outdoors?</h5>
+          <p>The ceremony and cocktail hour will be outdoors (weather permitting) and the reception will be indoors.</p>
+        </li>
+        <li class="faq-row">
+          <h5>Is there parking at the venue?</h5>
+          <p>Yes, there is a parking lot at the venue for guests who wish to drive themselves.</p>
+        </li>
+        <li class="faq-row">
+          <h5>What time should I arrive at the venue?</h5>
+          <p>Please arrive at the Brooklyn Botanic Garden at 6PM. The ceremony begins at 6:30PM.</p>
+        </li>
+        <li class="faq-row">
+          <h5>Is there a dress code?</h5>
+          <p>The dress code is formal. We encourage breathable fabrics and shoes suitable for grass. Bonus points for light spring colors and floral patterns—here’s some inspiration if you need it!</p>
+        </li>
+        <li class="faq-row">
+          <h5>Can I bring a date?</h5>
+          <p>Please check your invitation for plus ones!</p>
+        </li>
+        <li class="faq-row">
+          <h5>Are kids allowed?</h5>
+          <p>We are hoping to create a relaxed, adult-friendly environment for the evening, though we are leaving the option open for you to bring your little ones.</p>
+        </li>
+        <li class="faq-row">
+          <h5>Do you have a registry?</h5>
+          <p>No! Your presence at our wedding is the greatest gift we could ask for. We are truly thankful for the love from our friends and family who are able to celebrate our big day with us.</p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="thank-you reveal">
+      <p>Special thank you to <a href="https://www.rayastudios.co/" target="_blank" rel="noopener">Raya Studios</a> for taking our engagement photos and to <a href="https://www.ravenmo.info/" target="_blank" rel="noopener">Raven Mo</a> for our custom lettered logo and monogram!</p>
+    </div>
+
+    <section class="rsvp-band reveal">
+      <div class="rsvp-band__bg" data-parallax-speed="0.1">
+        <img src="assets/images/rsvp-bg.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="rsvp-band__overlay"></div>
+      <div class="rsvp-band__content">
+        <h2>RSVP</h2>
+        <p>We can’t wait to celebrate with you! Please RSVP by February XX, 2027.</p>
+        <a class="btn-pill" href="rsvp.html">RSVP</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>JUNE 6, 2027</span>
+    <img src="assets/vectors/monogram-footer.svg" alt="" />
+    <span>BROOKLYN, NY</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
