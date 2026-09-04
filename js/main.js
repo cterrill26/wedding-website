@@ -121,6 +121,34 @@
     window.addEventListener("resize", onScroll);
   }
 
+  /* ---- Spark burst on click, anywhere in the main banner ---- */
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var heroBanner = document.querySelector(".home-header");
+
+  if (heroBanner && !reduceMotion) {
+    heroBanner.addEventListener("click", function (e) {
+      var rect = heroBanner.getBoundingClientRect();
+      var originX = e.clientX - rect.left;
+      var originY = e.clientY - rect.top;
+      var sparkCount = 14;
+
+      for (var i = 0; i < sparkCount; i++) {
+        var angle = (Math.PI * 2 * i) / sparkCount + Math.random() * 0.3;
+        var distance = 50 + Math.random() * 70;
+        var spark = document.createElement("span");
+        spark.className = "hero-spark";
+        spark.style.left = originX + "px";
+        spark.style.top = originY + "px";
+        spark.style.setProperty("--dx", (Math.cos(angle) * distance).toFixed(1) + "px");
+        spark.style.setProperty("--dy", (Math.sin(angle) * distance).toFixed(1) + "px");
+        spark.addEventListener("animationend", function () {
+          this.remove();
+        });
+        heroBanner.appendChild(spark);
+      }
+    });
+  }
+
   /* ---- RSVP form (client-side only demo) ---- */
   var rsvpForm = document.querySelector(".rsvp-form");
   if (rsvpForm) {
