@@ -369,16 +369,21 @@ body.nav-open {
 =================================================================== */
 
 .site-footer {
-  background: var(--olive-light);
+  background: var(--pink-light);
   padding: 40px var(--container-pad);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   text-align: center;
-  color: var(--olive-dark);
+  color: var(--coral);
   font-size: 17px;
   letter-spacing: -0.17px;
+}
+
+.site-footer--home {
+  background: var(--olive-light);
+  color: var(--olive-dark);
 }
 
 .site-footer img {
